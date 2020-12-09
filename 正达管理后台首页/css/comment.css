@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+a {
+    text-decoration: none;color: #333;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+    font-size: 16px;
+}
+body{
+    font-family: Arial;
+}
+/* 工具类 */
+
+.l {
+    float: left;
+}
+
+.r {
+    float: right;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    border-top: 6px solid #424147;
+}
+header nav{
+    width: 100%;
+    height: 100%;
+    background-color: #018ffb;
+    padding: 0 20px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a{
+    display: block;
+    color: white;
+    margin-left: 25px;
+}
+header nav a span.iconfont{
+    margin-right: 10px;
+    font-size: 20px;position: relative;top: 2px;
+    font-weight: bold;
+}
+header nav a:nth-child(6) span.iconfont{
+    font-weight: normal;
+}
+header nav a:nth-child(1){
+    margin-left: 0px;
+}
+header nav a:nth-child(2){
+    flex-grow: 2;
+}
+header nav a:nth-child(2) h1{
+    font-size: 24px;
+}
+
+

@@ -1,0 +1,93 @@
+{
+  "id": "2211655",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1105001",
+      "name": "下载",
+      "font_class": "download",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "1111360",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "2116276",
+      "name": "删除",
+      "font_class": "dustbin_icon",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "5647049",
+      "name": "上传",
+      "font_class": "shangchuan",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "8448537",
+      "name": "项目管理",
+      "font_class": "ziyuan",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "9148973",
+      "name": "主页",
+      "font_class": "weimingmingwenjianjia_zhuye",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "14421790",
+      "name": "退出",
+      "font_class": "tuichu_huaban1",
+      "unicode": "e686",
+      "unicode_decimal": 59014
+    },
+    {
+      "icon_id": "14463314",
+      "name": "修改密码",
+      "font_class": "xiugaimima",
+      "unicode": "e764",
+      "unicode_decimal": 59236
+    },
+    {
+      "icon_id": "15388515",
+      "name": "管理员",
+      "font_class": "guanliyuan",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "15562251",
+      "name": "用户管理",
+      "font_class": "yonghuguanli",
+      "unicode": "e785",
+      "unicode_decimal": 59269
+    },
+    {
+      "icon_id": "16129937",
+      "name": "系统设置",
+      "font_class": "huaban41",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "17852599",
+      "name": "s_批量上传",
+      "font_class": "s_piliangshangchuan",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    }
+  ]
+}

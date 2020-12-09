@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id='positive-Timing'>开始计时</button>
+    <span id='time'></span><br>
+    <input id = 'input-time' type='time' value="12:00"/>
+</body>
+<script>
+    window.onload = function () {
+        {//正向计时
+            let obtn_positiveTiming = document.querySelector('#positive-Timing')
+            let otime = document.querySelector('#time')
+            let timer = null;
+            let timing = 0;
+            obtn_positiveTiming.onclick = function () {
+                if (timer) {//表示已经设置了定时器
+                    clearInterval(timer)
+                    obtn_positiveTiming.innerHTML = '开始计时'
+                    timing = 0
+                    timer = null
+                    otime.innerHTML = ''
+                } else {
+                    obtn_positiveTiming.innerHTML = '结束计时'
+                    timer = setInterval(function () {
+                        timing += 1
+                        otime.innerHTML = `${Math.floor(timing / 60)}:${timing % 60}`
+                    }, 1000)
+                }
+            }
+        }
+
+
+
+    }
+</script>
+
+</html>

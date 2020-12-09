@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/comment.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+
+        aside {
+            background-color: #424147;
+            width: 200px;
+            height: calc(100vh - 86px);
+        }
+
+        main {
+            flex-grow: 1;
+            height: calc(100vh - 86px);
+            background-color: white;
+        }
+
+        aside nav a {
+            display: block;
+            width: 100%;
+            height: 140px;
+            color: #9a999e;
+            text-align: center;
+            padding-top: 33px;
+            box-sizing: border-box;
+        }
+
+        aside nav a:after {
+            content: '';
+            display: block;
+            border-top: 1px solid #3a393e;
+            border-bottom: 1px solid #49484e;
+        }
+        aside nav a.active {
+            background-color: #4e4d53;
+            color: white;
+        }
+        aside nav a span.iconfont{
+            font-size: 40px;
+        }
+        aside nav a h2{
+            height: 65px;
+            line-height: 44px;
+        }
+        main .contain-header{
+            height: 190px;
+            box-sizing: border-box;
+            padding: 22px;
+            display: flex;
+        }
+        main .contain-header div:nth-child(1){
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+        main .contain-header div:nth-child(1) h2{
+            font-size: 26px;
+            height: 32px;
+            line-height: 26px;
+        }
+        main .contain-header div span{
+            color: #999;
+        }
+        main table{
+            display: block;
+            width: 100%;
+            height: calc(100vh - 276px);
+        }
+        main table caption{
+            display: block;
+        }
+        main table caption nav{
+            display: flex;
+            align-items: flex-end;
+            padding: 0 0 0 20px;
+            box-sizing: border-box;
+            width: 100%;
+            height: 57px;
+            background-color: #f1f9fc;
+            border: 1px solid #e0eaef;
+            border-left: none;
+            border-right: none;
+        }
+        main table caption nav a{
+            display: block;
+            width: 106px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid #dbe7ed;
+            border-bottom: none;
+            margin-right: 12px;
+            color: #666;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            /* overflow: hidden; */
+            background-color: #fbfeff;
+        }
+        main table caption nav a.active{
+            color: white;
+            background-color: #018ffb;
+            position: relative;
+        }
+        main table caption nav a.active:after{
+            content: '▼';
+            position: absolute;
+            left: calc(50% - 8px);
+            bottom: -22px;
+            font-size: 16px;
+            color: #018ffb;
+            transform: scale(2,1);
+        }
+        main table caption section{
+            height: 70px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <a href="#" class="logo"><img src="./images/logo.png" alt="正达建筑"></a>
+            <a href="#" class="h1">
+                <h1>正达建筑内部管理平台</h1>
+            </a>
+            <a href="#" class="admin"><span class="iconfont icon-guanliyuan"></span>欢迎你，吴建管理员</a>
+            <a href="#" class="passwd"><span class="iconfont icon-xiugaimima"></span>修改密码</a>
+            <a href="#" class="official-website"><span class="iconfont icon-weimingmingwenjianjia_zhuye"></span>公司官网</a>
+            <a href="#" class="quit"><span class="iconfont icon-tuichu_huaban1"></span>退出</a>
+        </nav>
+    </header>
+
+    <aside>
+        <nav>
+            <a href="#" class="active">
+                <span class="iconfont icon-ziyuan"></span>
+                <h2>项目管理</h2>
+            </a>
+            <a href="#" >
+                <span class="iconfont icon-yonghuguanli"></span>
+                <h2>用户管理</h2>
+            </a>
+            <a href="#" >
+                <span class="iconfont icon-huaban41"></span>
+                <h2>系统设置</h2>
+            </a>
+        </nav>
+    </aside>
+    <main>
+        <div class="contain-header">
+            <div>
+                <h2>青田高湾绿田一期、二期工程</h2>
+                <section>项目标号：<span>CN0000709</span></section>
+                <section>项目类型：<span>在建工程</span></section>
+                <section>项目负责人：<span>李华</span></section>
+                <section>手机号码：<span>15503032254</span></section>
+            </div>
+            <div>
+                <img src="./images/prpject.jpg" alt="">
+            </div>
+        </div>
+        <table>
+            <caption>
+                <nav>
+                    <a href="#">视频监控</a>
+                    <a href="#">考勤管理</a>
+                    <a href="#">安全巡查</a>
+                    <a href="#" class="active">资料管理</a>
+                </nav>
+                <section>
+                    <button>单个上传</button>
+                    <button>批量上传</button>
+                    <input type="text">
+                </section>
+            </caption>
+
+            <thead>
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+        <footer>
+
+        </footer>
+    </main>
+
+
+</body>
+
+</html>
